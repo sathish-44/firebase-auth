@@ -1,0 +1,99 @@
+.authpage {
+  min-height: 87vh;
+  display: flex;
+}
+
+.authpage--left {
+  width: 50vw;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #70db8a;
+
+  position: relative;
+}
+
+.authpage--right {
+  margin: 10px;
+  border-radius: 5px;
+  width: 50vw;
+  background-color: #70db8a;
+  padding: 70px 70px 10px 90px;
+}
+
+.authpage--disc {
+  width: 8em;
+  height: 8em;
+  border-radius: 10%;
+  background-color: #ff6;
+  position: absolute;
+  top: 50%;
+  right: -5em;
+  transform: translateY(-50%);
+}
+
+.authpage--textanimation {
+  position: fixed;
+  top: 55%;
+  left: 25%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.authpage--textanimation h1 {
+  font: bold 30px Arial;
+  color: #fff;
+}
+
+.authpage--customCard {
+  background: #e6f7eb !important;
+  position: relative;
+  top: 15%;
+  border-radius: 20px !important;
+  border-color: none;
+}
+
+.authpage--textfield {
+  color: #fff !important;
+}
+
+@media screen and (max-width: 960px) {
+  .authpage {
+    display: flex;
+    flex-direction: column;
+  }
+  .authpage--left {
+    width: 100%;
+    height: 30vh;
+    margin: 20px 25px 10px 0px;
+  }
+
+  .authpage--right {
+    width: 100%;
+    margin: 10px 0px 10px 0;
+    height: 50vh;
+    padding: 20px;
+  }
+
+  .authpage--disc {
+    display: none;
+  }
+
+  .authpage--textanimation {
+    position: fixed;
+    top: 30%;
+    left: 48%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+  }
+
+  .authpage--textanimation h1 {
+    /* margin: 0;
+        padding: 0;
+        background: url(https://avatars1.githubusercontent.com/u/2500557?s=460&v=4) top center;
+        -webkit-background-clip: ;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
+    font: bold 17px Arial;
+    color: white;
+  }
+}
